@@ -7,7 +7,7 @@ from PIL import Image
 from keras.models import load_model
 app = Flask(__name__)
 model_data = [['old-model.h5',53],['model.h5',100]]
-config= model_data[1]
+config= model_data[0]
 @app.route('/api/predict', methods=['POST'])
 def predict():
     data = request.get_json()
@@ -32,4 +32,4 @@ def prediction_img(image):
 
 if __name__ == '__main__':
     model = load_model(config[0])
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0')

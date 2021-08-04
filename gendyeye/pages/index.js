@@ -24,7 +24,7 @@ const Home = () => {
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     if (imageSrc) {
-      predict(imageSrc);
+      prediction(imageSrc);
     }
   }, [webcamRef]);
   const handleClickUpload = () => {

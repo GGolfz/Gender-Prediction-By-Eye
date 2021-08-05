@@ -95,6 +95,7 @@ const Home = () => {
       }}
     >
       <h1 style={{ textAlign: "center" }}>Gender prediction from Eye</h1>
+      <h5 style={{margin:0}}>(Made for education purposes on learning convolutional neural networks)</h5>
       <p style={{ textAlign: "center" }}>
         Take an image or upload like this to predict your gender.
         <br /> <br />{" "}

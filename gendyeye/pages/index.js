@@ -47,7 +47,7 @@ const Home = () => {
     if (croppedImg) {
       console.log(croppedImg);
       await axios
-        .post("https://lab.ggolfz.codes/api/predict", { data: croppedImg })
+        .post("https://lab.ggolfz.codes/gendy-api/predict", { data: croppedImg })
         .then((res) => {
           if (res.data.success) {
             clearImage();
